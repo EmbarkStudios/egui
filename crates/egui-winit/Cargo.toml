@@ -55,7 +55,7 @@ wayland = ["winit/wayland", "bytemuck"]
 x11 = ["winit/x11", "bytemuck"]
 
 [dependencies]
-egui = { workspace = true, default-features = false, features = ["log"] }
+egui = { version = "0.26.0", default-features = false, features = ["log"] }
 log.workspace = true
 raw-window-handle.workspace = true
 web-time.workspace = true
