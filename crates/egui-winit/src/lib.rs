@@ -1496,6 +1496,7 @@ pub fn short_generic_event_description<T>(event: &winit::event::Event<'_, T>) ->
     use winit::event::{DeviceEvent, Event, StartCause};
 
     match event {
+        Event::OpenURL{ .. } => "Event::OpenURL",
         Event::Suspended => "Event::Suspended",
         Event::Resumed => "Event::Resumed",
         Event::MainEventsCleared => "Event::MainEventsCleared",
