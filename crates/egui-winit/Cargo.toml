@@ -58,7 +58,9 @@ wayland = ["winit/wayland", "bytemuck"]
 x11 = ["winit/x11", "bytemuck"]
 
 [dependencies]
-egui = { workspace = true, default-features = false, features = ["log"] }
+# Note: Since we want to be able to pull in egui-winit via a `[patch.crates-io]`
+# we don't use `workspace = true` here
+egui = { version = "0.28", default-features = false, features = ["log"] }
 
 ahash.workspace = true
 log.workspace = true
