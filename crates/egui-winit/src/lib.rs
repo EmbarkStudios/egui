@@ -1757,6 +1757,7 @@ pub fn short_generic_event_description<T>(event: &winit::event::Event<T>) -> &'s
     match event {
         Event::AboutToWait => "Event::AboutToWait",
         Event::LoopExiting => "Event::LoopExiting",
+        Event::OpenURL { .. } => "Event::OpenURL",
         Event::Suspended => "Event::Suspended",
         Event::Resumed => "Event::Resumed",
         Event::MemoryWarning => "Event::MemoryWarning",
