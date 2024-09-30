@@ -96,8 +96,7 @@ wgpu = { version = "0.20.0", default-features = false, features = [
     "fragile-send-sync-non-atomic-wasm",
 ] }
 
-# Currently can't upgrade above 0.30.2 due to https://github.com/rust-windowing/winit/issues/3837
-winit = { version = "=0.30.2", default-features = false }
+winit = { version = "0.30", default-features = false }
 
 [workspace.lints.rust]
 unsafe_code = "deny"
