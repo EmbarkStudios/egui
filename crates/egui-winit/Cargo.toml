@@ -58,7 +58,7 @@ wayland = ["winit/wayland", "bytemuck"]
 x11 = ["winit/x11", "bytemuck"]
 
 [dependencies]
-egui = { workspace = true, default-features = false, features = ["log"] }
+egui = { version = "0.28", default-features = false, features = ["log"] }
 
 ahash.workspace = true
 log.workspace = true
